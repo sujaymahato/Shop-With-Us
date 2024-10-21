@@ -125,10 +125,10 @@ const products = {
 
 
 const bannerImages = {
-    'tshirt': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images-men/t-shirtsbanner.jpg")',
-    'jeans': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images-men/jeansbanner.jpg")',
-    'jackets': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images-men/jacketsbanner.jpg")',
-    'shirts': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images-men/shirtbanner.jpg")',
+    'tshirt': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images-men/t-shirtsbanner.jpg")',
+    'jeans': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images-men/jeansbanner.jpg")',
+    'jackets': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images-men/jacketsbanner.jpg")',
+    'shirts': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images-men/shirtbanner.jpg")',
     'shoes': 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images-men/shoesbanner.jpg")'
 };
 
