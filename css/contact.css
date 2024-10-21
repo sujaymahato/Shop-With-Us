@@ -127,5 +127,26 @@ p {
 }
 
 
+@media (max-width: 600px) {
+
+    h1 { font-size: 30px !important; }
+    h2 { font-size: 26px !important; }
+    h3 { font-size: 24px !important; }
+    h4 { font-size: 20px !important; }
+    h5 { font-size: 18px !important; }
+    h6 { font-size: 16px !important; }
+
+    .top-header {
+        background-color: #ff6b6b;
+        color: #ffffff;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10px;
+    }
+}
+
+
 
 
