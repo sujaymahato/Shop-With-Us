@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden; 
+}
+
+.font {
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+
+.top-header {
+    background-color: #ff6b6b; 
+    color: #ffffff; 
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.left {
+    font-weight: bold;
+}
+
+.right {
+    font-weight: normal;
+}
+
+.phone-link, .email-link {
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+.navheadingtext {
+    font-weight: 500;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images-login/banner.jpg");
+    background-size: cover;
+   
+   
+}
+
+.navbar-nav .nav-link {
+    text-decoration: none; 
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    
+}
+
+
+.login-form-container {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    backdrop-filter: blur(20px);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 400px;
+    transition: transform 0.3s;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+
+.login-input {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-input::placeholder {
+    color: #d9d7d7;
+}
+
+.login-input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+.password-toggle {
+    display: flex;
+    align-items: center;
+    margin: 10px 0; 
+}
+
+.password-toggle input {
+    margin-right: 10px; 
+}
+
+
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 5px 20px rgba(255, 107, 107, 0.4);
+    margin-bottom: 20px;
+}
+
+.login-btn:hover {
+    background-color: #ffdd57;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 221, 87, 0.6);
+}
+
+
+.login-form-container p a {
+
+    color: #ffdd57;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-form-container p a:hover {
+    color: #ff6b6b;
+    text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    h1 { font-size: 30px !important; }
+    h2 { font-size: 26px !important; }
+    h3 { font-size: 24px !important; }
+    h4 { font-size: 20px !important; }
+    h5 { font-size: 18px !important; }
+    h6 { font-size: 16px !important; }
+
+    .top-header {
+        background-color: #ff6b6b;
+        color: #ffffff;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 10px;
+    }
+
+  
+
+
+
+
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    h1 { font-size: 36px !important; }
+    h2 { font-size: 32px !important; }
+    h3 { font-size: 28px !important; }
+    h4 { font-size: 24px !important; }
+    h5 { font-size: 20px !important; }
+    h6 { font-size: 18px !important; }
+   
+
+  
+}
+
+@media (min-width: 901px) and (max-width: 1200px) {
+
+    h1 { font-size: 40px !important; }
+    h2 { font-size: 36px !important; }
+    h3 { font-size: 28px !important; }
+    h4 { font-size: 26px !important; }
+    h5 { font-size: 24px !important; }
+    h6 { font-size: 20px !important; }
+
+    .banner {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images-login/mobile-banner.jpg");
+        background-size: cover;
+    
+    }
+
+
+}
+
+
+
+

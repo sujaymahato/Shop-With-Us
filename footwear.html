@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product's Collections</title>
+    <link rel="stylesheet" href="css/footwear.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="top-header">
+        <div class="left font">
+            <span id="current-time"></span>
+        </div>
+        <div class="right font">
+            <span>   <a href="tel:9748456993" class="phone-link">Call Us: +123 456 7890</a> |
+                 <a href="mailto:sujaymahato322@gmail.com" class="email-link">Email: shopwithus@gmail.com</a></span>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!----------------------------------- navbar-------------------------------- -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navheadingtext font ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Shop with Us</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Category
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="men.html">Men</a></li>
+                            <li><a class="dropdown-item" href="women.html">Women</a></li>
+                            <li><a class="dropdown-item" href="child.html">Child</a></li>
+
+                        </ul>
+                    </li>
+
+
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Footwear
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="clothes.html">Clothes</a></li>
+                            <li><a class="dropdown-item" href="accessories.html">Accessories</a></li>
+                            <li><a class="dropdown-item" href="watches.html">Watches</a></li>
+                            <li><a class="dropdown-item" href="beauty.html">Beauty</a></li>
+                            <li><a class="dropdown-item" href="backpack.html">Backpack</a></li>
+                            <li><a class="dropdown-item" href="jewelry.html">Jewelry </a></li>
+                            <li><a class="dropdown-item" href="toy.html">Toys & Games</a></li>
+                            <li><a class="dropdown-item" href="footwear.html">Footwear</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="newarrivals.html">New Arrivals</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login / Register</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--------------------------------------- banner ------------------------------------>
+    <div class="banner d-flex justify-content-center align-items-center text-center font"
+    style="height: 600px; background-color: #008080;" id="banner">
+    <div class="name ">
+        <h1 class="display-4 text-white font-weight-bold ">Shop With Us</h1>
+        <p class="lead text-white">World's no.1 Fashion store</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="container">
+    <div class="button-container font">
+      <div class="filter-bar text-center my-4">
+        <button class="filter-button btn mx-2" onclick="location.href='clothes.html';">Clothes</button>
+        <button class="filter-button btn mx-2" onclick="location.href='accessories.html';">Accessories</button>
+        <button class="filter-button btn mx-2" onclick="location.href='watches.html';">Watches</button>
+        <button class="filter-button btn mx-2" onclick="location.href='beauty.html';">Beauty</button>
+        <button class="filter-button btn mx-2" onclick="location.href='backpack.html';">Backpack</button>
+        <button class="filter-button btn mx-2" onclick="location.href='jewelry.html';">Jewelry</button>
+        <button class="filter-button btn mx-2" onclick="location.href='toy.html';">Toys</button>
+        <button class="filter-button active btn mx-2" onclick="location.href='footwear.html';">Footwear</button>
+      </div>
+    </div>
+  </div>
+  
+
+<div class="container font">
+<div id="productCards" class="product-cards-container d-flex flex-wrap justify-content-between">
+    <!-- Product cards will be generated here -->
+</div>
+</div>
+
+
+
+<!-- Custom Modal -->
+<!-- Animation Container -->
+<div id="animationContainer" class="animation-container" style="display: none;">
+    <div class="animation-content font">
+        <!-- You can add an image or animation here -->
+        <img src="path/to/your/animation.gif" alt="Order Animation" id="orderAnimation">
+        <p>Your order has been placed successfully!</p>
+    </div>
+</div>
+
+<div id="customModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content font">
+            <div class="modal-header">
+                <h5 class="modal-title">Order Product</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="images-products/fashion.jpg" alt="Product Image" class="img-fluid mb-3" id="productImage">
+                <label for="size">Select Size:</label>
+                <select id="size" class="form-select">
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <div class="input-group mb-3">
+                    <button class="btn btn-outline-secondary" type="button" id="decrement">-</button>
+                    <input type="number" id="quantity" class="form-control" value="1" min="1">
+                    <button class="btn btn-outline-secondary" type="button" id="increment">+</button>
+                </div>
+                <p id="total-price">Total: Rs <span id="priceValue">500</span></p>
+                <label for="address">Address:</label>
+                <input type="text" id="address" class="form-control" placeholder="Your Address" required>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" id="place-order">Place Order</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<footer class="footer font">
+    <div class="container footer-container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:sujaymahato322@gmail.com">shopwithus@gmail.com</a></p>
+                <p>Phone: <span>+123 456 7890</span></p>
+                <p>Address: <span>123 Main St, City, Country</span></p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h3>Quick Links</h3>
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-4">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><img src="https://img.icons8.com/color/48/ffffff/facebook-new.png" alt="Facebook" /></a>
+                    <a href="#" aria-label="Twitter"><img src="https://img.icons8.com/color/48/ffffff/twitter.png" alt="Twitter" /></a>
+                    <a href="#" aria-label="Instagram"><img src="https://img.icons8.com/color/48/ffffff/instagram-new.png" alt="Instagram" /></a>
+                    <a href="#" aria-label="LinkedIn"><img src="https://img.icons8.com/color/48/ffffff/linkedin.png" alt="LinkedIn" /></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Shop with Us. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/footwear.js"></script>
+</body>
+
+</html>

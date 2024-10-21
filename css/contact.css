@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+   
+}
+
+.font{
+    font-family: 'Ubuntu', sans-serif; 
+}
+
+.top-header {
+    background-color: #ff6b6b; 
+    color: #ffffff; 
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.left {
+    font-weight: bold;
+}
+
+.right {
+    font-weight: normal;
+}
+
+.phone-link, .email-link {
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+
+.navheadingtext{
+   
+    font-weight: 500;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images-contact/banner.jpg");
+    background-size: cover;
+}
+
+.contact-container {
+    background-color: rgba(123, 122, 122, 0.5); 
+    padding: 20px;
+    border-radius: 25px; 
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-in-out;
+    width: 80%; 
+    height: 600px;
+ 
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: white; 
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #eee;
+}
+
+.form-group label {
+    color: #fff; 
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.2); 
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    border-radius: 20px; 
+    transition: all 0.3s ease;
+    padding: 12px; 
+}
+
+.form-control:focus {
+    border-color: #6a11cb;
+    background-color: rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 0 10px rgba(106, 17, 203, 0.2);
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: rgba(106, 17, 203, 0.8);
+    border: none;
+    padding: 14px 40px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 6px 20px rgba(106, 17, 203, 0.4);
+    border-radius: 20px; 
+}
+
+.btn-primary:hover {
+    background-color: rgba(106, 17, 203, 1);
+    transform: translateY(-3px);
+}
+
+#successMessage {
+    color: rgb(38, 182, 9);
+    font-weight: 500;
+    opacity: 0;
+    animation: fadeIn 1.5s ease forwards;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+
+
